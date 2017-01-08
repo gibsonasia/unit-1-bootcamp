@@ -10,8 +10,8 @@ public class ClassesAndObjects {
         Cat catWoman = new Cat("CatWoman");
 
         garfield.setFavoriteFood("Lasagna");
-        pinkPanther.setFavoriteFood("Chicken");
-        catWoman.setFavoriteFood("Tuna");
+        pinkPanther.setFavoriteFood("Beefaroni");
+        catWoman.setFavoriteFood("Ziti");
 
         garfield.setAge(40);
         pinkPanther.setAge(70);
