@@ -78,12 +78,28 @@ public class Conditionals {
         int fri = 5;
         int sat = 6;
 
-        boolean currentDay;
-
         if (!vacation) {
             return "0ff";
         }
-        return "10:00";
+        switch (day){
+            case(0):
+                return "10:00";
+            case(1):
+                return "7:00";
+            case(2):
+                return "7:00";
+            case(3):
+                return "7:00";
+            case(4):
+                return "7:00";
+            case(5):
+                return "7:00";
+            case(6):
+                return "10:00";
+
+        }
+        return "off"
+
     }
 
     public int greenTicket(int a, int b, int c) {

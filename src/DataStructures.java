@@ -32,10 +32,8 @@ public class DataStructures {
         podMap.put("Rusi", 27);
         podMap.put("Asia", 24);
 
-        Iterator<String> mapIterator = podMap.keySet().iterator();
-        while (mapIterator.hasNext()) {
-            String name = mapIterator.next();
-            System.out.println(name + ": " + podMap.get(name));
+        for (String key : podMap.keySet()){
+            System.out.println(key + ": " + podMap.get(key));
         }
 
     }
