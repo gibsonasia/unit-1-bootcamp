@@ -32,7 +32,7 @@ public class DataStructures {
         podMap.put("Rusi", 27);
         podMap.put("Asia", 24);
 
-        for (String key : podMap.keySet()){
+        for (String key : podMap.keySet()) {
             System.out.println(key + ": " + podMap.get(key));
         }
 
@@ -49,13 +49,14 @@ public class DataStructures {
     }
 
     private static boolean canRentACar(Map<String, Integer> podMap) {
-        Iterator<String> mapIterator = podMap.keySet().iterator();
-        String name = mapIterator.next();
-        if (podMap.get(name) > 25) {
-            return true;
-        } else {
-
-            return false;
+        for (String key : podMap.keySet()) {
+            if (podMap.get(key) > 25) {
+                return true;
+            }
         }
+
+        return false;
     }
+}
+
 }
